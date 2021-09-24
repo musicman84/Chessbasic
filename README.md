@@ -19,3 +19,5 @@ Instructions to play:
 *Player 1's turn (white pieces) - select piece to move by cooardinates (coloumn letter, row number) for example A2, then select piece destination using the same coordinates system
 *Player 2's turn (black pieces) - see above
 *close window to end (checkmate is not yet implemented)
+
+To run executable, the StandardBoardInit.dat file must be within the same folder.
