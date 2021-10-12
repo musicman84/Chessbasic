@@ -2,8 +2,13 @@
 Simple 2 player chess game.
 Rules implemented are:
 *Player turn taking
-*Pieces cannot move onto pieces of the same colour
 *Moving a piece onto a space occupied by an opponents piece removes the opponents piece from the game
+*All basic moves are fully implemented
+Rules yet to be implemented are:
+*Check
+*check-mate
+*En passant
+*Castling
 
 Instructions to play:
 *On startup, enter number of players (has to be 2)
@@ -16,8 +21,7 @@ Instructions to play:
     b = bishop
     k = king
     q = queen
-*Player 1's turn (white pieces) - select piece to move by cooardinates (coloumn letter, row number) for example A2, then select piece destination using the same coordinates system
+*Player 1's turn (white pieces) - select piece to move by cooardinates (coloumn letter, row number) for example A2 (or a2), then select..
+*.. piece destination using the same coordinates system
 *Player 2's turn (black pieces) - see above
 *close window to end (checkmate is not yet implemented)
-
-To run executable, the StandardBoardInit.dat file must be within the same folder.
