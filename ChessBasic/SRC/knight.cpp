@@ -17,10 +17,10 @@
 					else if (squareStatus(i, j) == 'o') {//square has oppoonent's piece on it (other than king)
 						legalMove[i][j] = 2;
 					}
-					else if (squareStatus(i, j) == 'k') {//square has oppoonent's piece on it (other than king)
+					else if (squareStatus(i, j) == 'k') {//square has oppoonent's king on it 
 						legalMove[i][j] = 3;
 					}
-					else if (squareStatus(i, j) == 's') {//square has oppoonent's piece on it (other than king)
+					else if (squareStatus(i, j) == 's') {//square has own piece on it
 						legalMove[i][j] = 0;
 					}
 					else exit(594);
@@ -32,10 +32,10 @@
 					else if (squareStatus(i, j) == 'o') {//square has oppoonent's piece on it (other than king)
 						legalMove[i][j] = 2;
 					}
-					else if (squareStatus(i, j) == 'k') {//square has oppoonent's piece on it (other than king)
+					else if (squareStatus(i, j) == 'k') {//square has oppoonent's king on it 
 						legalMove[i][j] = 3;
 					}
-					else if (squareStatus(i, j) == 's') {//square has oppoonent's piece on it (other than king)
+					else if (squareStatus(i, j) == 's') {//square has own piece on it
 						legalMove[i][j] = 0;
 					}
 					else exit(594);

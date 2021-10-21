@@ -97,9 +97,13 @@
 		{
 			int i = turnCount % 2;//alternate i between 0 and 1
 			turnCount++;//track number of turns
-			turn[i]->takeTurn();//player takes turn
-			cBoard.setBoard();//update board
-			cBoard.printBoard(view);//show updated board
+			checkMate = turn[i]->initialCalcsShowCheckMate();
+			if (!checkMate) {
+				turn[i]->takeTurn();//player takes turn
+				cBoard.setBoard();//update board
+				cBoard.printBoard(view);//show updated board
+			}
+			
 		}
 	};
 	game::~game() {//destructor - deallocate dynamic memory

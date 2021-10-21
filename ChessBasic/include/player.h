@@ -14,6 +14,5 @@ public:
 	
 	virtual void takeTurn() = 0;
 	void setName(string Name = "Default"); 
-	void clearLegalMoveArray();
-	void setLegalMoveArray();
+	bool initialCalcsShowCheckMate();
 };

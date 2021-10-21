@@ -15,19 +15,16 @@ using namespace std;
 	void player::setName(string Name) {
 		name = Name;
 	}
-	void player::clearLegalMoveArray(){
-		for (int i = 0; i < ownPieceCount; i++) {
-			ownPieces[i]->clearLegalMoveArray();
+	bool player::initialCalcsShowCheckMate() {//work out all legal moves and check for Checkmate,
+		(*ownPieces)->setAllLegalMoveArrays();//calulate all legal move arrays
+		(*ownPieces)->applyCheckToOwnPieces();//apply Check rule (only to pieces of same colour)
+		if ((*ownPieces)->isCheckMate()) {
+			cout << "Check Mate\n";
+			return (true);
 		}
-		for (int i = 0; i < oppPieceCount; i++) {
-			oppPieces[i]->clearLegalMoveArray();
+		if ((*ownPieces)->isInCheck()) {//check for Check
+			cout << "Check\n";
 		}
+		return(false);
 	}
-	void player::setLegalMoveArray() {
-		for (int i = 0; i < ownPieceCount; i++) {
-			ownPieces[i]->allLegalMoves();;
-		}
-		for (int i = 0; i < oppPieceCount; i++) {
-			oppPieces[i]->allLegalMoves();;
-		}
-	}
+	

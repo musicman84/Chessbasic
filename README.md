@@ -4,12 +4,15 @@ Rules implemented are:
 *Player turn taking
 *Moving a piece onto a space occupied by an opponents piece removes the opponents piece from the game
 *All basic moves are fully implemented
-Rules yet to be implemented are:
 *Check
 *check-mate
+
+Rules yet to be implemented are:
+
 *En passant
 *Castling
 *Piece promotion
+*draws
 
 Instructions to play:
 *On startup, enter number of players (has to be 2)

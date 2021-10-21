@@ -10,7 +10,6 @@ using namespace std;
 
 	void pawn::allLegalMoves() {//default is false for each square
 		int moveDist = 1;		
-		
 		if (colour == "W") {
 			if (yetToMove == true && row == 1) {// double checking that pawn is allowed to move two places
 				moveDist = 2;
@@ -70,11 +69,11 @@ using namespace std;
 				return;
 			}
 			else if (squareStatus(newCol, newRow) == 'o') {//square has oppoonent's piece on it
-				legalMove[newCol][newRow] = 2;
+					legalMove[newCol][newRow] = 2;
 				return;
 			}
 			else if (squareStatus(newCol, newRow) == 'k') {//square has oppoonent's king on it
-				legalMove[newCol][newRow] = 3;
+					legalMove[newCol][newRow] = 3;
 				return;
 			}
 			else if (squareStatus(newCol, newRow) == 's')//square has own piece on it

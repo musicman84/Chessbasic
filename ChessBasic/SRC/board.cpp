@@ -6,7 +6,7 @@ using namespace std;
 	};
 
 	board::~board() {//destructor - deallocate dynamic memory
-		for (int i = 0; i < 32; i++) {
+		for (int i = 0; i < pieceNumber; i++) {
 			delete allPieces[i];
 		}
 	}
@@ -36,6 +36,8 @@ using namespace std;
 	void board::loadBoard() {
 		ifstream file;
 		file.open("StandardBoardInit.dat", ios::in);//initialise the board to the standard starting setup
+		//file.open("pawnOnly.dat", ios::in);
+		//file.open("rooksAndKingCheckmate.dat", ios::in);
 		//file.open("C:\Users\music\source\repos\ChessBasic\ChessBasic\test.txt", ios::in);//using absolute path not working
 		//file.open("test.txt", ios::in);
 		if (!file) {//check if file is found
@@ -200,17 +202,6 @@ using namespace std;
 		piece** board::getBlackPieces() {
 			return blackPieces;
 		}
-		/*
-		char board::numToLet(int original)//convert ints to numbers for output only
-		{
-			char const numToLet[] = "ABCDEFGH";
-			if (original >= 0 && original < sizeof(numToLet) - 1)
-			{
-				return numToLet[original];
-			}
-			else exit(4);
-		}
-		*/
 		void board::sortPiecesForColour(string pieceColour) {
 			if (pieceColour == "W") {
 				whitePieces[whitePieceNum] = allPieces[pieceNumber];
