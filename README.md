@@ -9,6 +9,7 @@ Rules yet to be implemented are:
 *check-mate
 *En passant
 *Castling
+*Piece promotion
 
 Instructions to play:
 *On startup, enter number of players (has to be 2)
