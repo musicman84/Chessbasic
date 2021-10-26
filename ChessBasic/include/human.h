@@ -16,4 +16,5 @@ public:
 	int convertColCoord(string original);//converts A=0, B=1 etc
 	
 	int convertRowCoord(string original);//converts "0"=0, "1"=1 etc
+	string getPlayerType();
 };

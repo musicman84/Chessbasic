@@ -13,7 +13,7 @@ using namespace std;
 	void board::setBoard() {//Update board for display
 		for (int i = 0; i < 8; i++) {
 			for (int j = 0; j < 8; j++) {
-				boardStr[i][j] = "ee";
+				boardStr[i][j] = "..";
 			}
 		}
 		for (int i = 0; i < whitePieceNum; i++) {

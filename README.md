@@ -1,5 +1,6 @@
 # chessBasic
-Simple 2 player chess game.
+Simple chess game.
+Currently the computer will pick legal moves at random (if the game is not being played 2 player).
 Rules implemented are:
 *Player turn taking
 *Moving a piece onto a space occupied by an opponents piece removes the opponents piece from the game
@@ -15,9 +16,9 @@ Rules yet to be implemented are:
 *draws
 
 Instructions to play:
-*On startup, enter number of players (has to be 2)
+*On startup, enter number of players
 *Select view of board (from white's view or black's) {Dev note- could added dynamic view option - view from player whose turn it is}
-#Board will then be displayerd. 'ee' is an empty space, 'W' or 'B' first letter specifies that the piece is white or black respectively
+#Board will then be displayerd. '..' is an empty space, 'W' or 'B' first letter specifies that the piece is white or black respectively
 #second letter specifes the piece as:
     p = pawn
     r = rook

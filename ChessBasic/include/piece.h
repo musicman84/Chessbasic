@@ -3,6 +3,7 @@
 #include <string>
 #include <fstream>
 #include "genFunc.h"
+#include <vector>
 
 using namespace std;
 class piece {//parent class, for all piece classes

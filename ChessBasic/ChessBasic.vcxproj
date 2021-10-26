@@ -164,6 +164,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="SRC\AI.cpp" />
+    <ClCompile Include="SRC\AImove.cpp" />
     <ClCompile Include="SRC\bishop.cpp" />
     <ClCompile Include="SRC\board.cpp" />
     <ClCompile Include="SRC\ChessBasic.cpp" />
@@ -186,6 +187,7 @@
     <ClInclude Include="include\board.h" />
     <ClInclude Include="include\game.h" />
     <ClInclude Include="include\genFunc.h" />
+    <ClInclude Include="include\AImove.h" />
     <ClInclude Include="include\human.h" />
     <ClInclude Include="include\king.h" />
     <ClInclude Include="include\knight.h" />

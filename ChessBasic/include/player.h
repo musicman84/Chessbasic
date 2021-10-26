@@ -15,4 +15,5 @@ public:
 	virtual void takeTurn() = 0;
 	void setName(string Name = "Default"); 
 	bool initialCalcsShowCheckMate();
+	virtual string getPlayerType() = 0;
 };

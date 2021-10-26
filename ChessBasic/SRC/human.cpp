@@ -27,7 +27,7 @@
 			bool hasPossibleMoves = true;
 			currentPiece->outputAllPossMoves(hasPossibleMoves);
 			//currentPiece->sayHi();
-			if (hasPossibleMoves) {
+			if (hasPossibleMoves) {//checks that the piece has a possible move
 				cout << "Enter coordinate of piece destination (let,num):";
 				cin >> coordFinish;
 				colFinish = convertColCoord(coordFinish.substr(0, 1));
@@ -76,4 +76,7 @@
 			}
 		}
 		return 9;
+	}
+	string human::getPlayerType() {
+		return("human");
 	}

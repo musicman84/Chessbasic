@@ -15,11 +15,12 @@
 			cin >> numPchaArr;
 			numPcha = numPchaArr[0];
 		}
+		/*
 		if (numPcha != '2') {//remove once AI implemented
 			cout << "Only two player implemented" << endl;
 			numPcha = '2';
 		}
-
+		*/
 
 		if (numPcha == '1')
 		{
@@ -101,6 +102,9 @@
 			if (!checkMate) {
 				turn[i]->takeTurn();//player takes turn
 				cBoard.setBoard();//update board
+				if (turn[i]->getPlayerType() == "ai") {
+					cout << endl << endl << endl;
+				}
 				cBoard.printBoard(view);//show updated board
 			}
 			
